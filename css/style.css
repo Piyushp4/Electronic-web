@@ -287,6 +287,11 @@ textarea.input {
   max-height: 800px;
 }
 
+.forgot-password a {
+  color: #8D99AE;
+  margin-left: 10px;
+}
+
 /*----------------------------*\
 	Section
 \*----------------------------*/
