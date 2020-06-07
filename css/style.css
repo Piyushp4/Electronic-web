@@ -2193,3 +2193,28 @@ textarea.input {
     margin-top: 10px;
   }
 }
+
+/*=========================================================
+	14 -> Description Table
+===========================================================*/
+
+table, tr {
+	border: 1px solid black;
+	padding: 15px;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td.value {
+	border: 1px solid black;
+	padding: 0.5rem;
+}
+
+td.label {
+	color: black;
+	font-size: 15px;
+	padding: 0.5rem;
+}
