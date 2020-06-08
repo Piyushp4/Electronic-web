@@ -317,7 +317,6 @@ textarea.input {
 \*----------------------------*/
 
 .section {
-	padding-top: 30px;
 	padding-bottom: 30px;
 }
 
@@ -2068,7 +2067,7 @@ textarea.input {
 }
 
 .footer {
-	margin: 30px 0px;
+	margin: 60px 0px;
 }
 
 .footer .footer-title {
