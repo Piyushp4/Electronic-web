@@ -2289,3 +2289,128 @@ td.label {
 	font-size: 15px;
 	padding: 0.5rem;
 }
+
+/*=========================================================
+	14 -> Comparison Page
+===========================================================*/
+
+div.comparisontable {
+	display: flex;
+	flex-direction: column;
+	/* turn children ul elements into stacked rows */
+}
+
+
+div.comparisontable ul.row {
+	list-style: none;
+	display: flex;
+	/* turn children li elements into flex children */
+	flex: 1;
+	flex-wrap: wrap;
+}
+
+div.comparisontable ul.row li {
+	background: #c9f4ca;
+	flex: 1;
+	padding: 10px;
+	border-bottom: 0.5px solid black;
+	border-right: 0.5px solid black;
+	text-align: center;
+}
+
+/* the legend column (first li within each row) */
+div.comparisontable ul.row li.legend {
+	background: #6640d8;
+	color: white;
+	border: none;
+	width: 200px;
+	border-bottom: 0.5px solid black;
+}
+
+/* very first row */
+div.comparisontable ul.row:first-of-type li {
+	text-align: center;
+}
+
+/* very last row */
+div.comparisontable ul.row:last-of-type li {
+	text-align: center;
+	border-bottom: none;
+	box-shadow: 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+/* first and last cell within legend column */
+div.comparisontable ul.row:first-of-type li.legend.legend,
+div.comparisontable ul.row:last-of-type li.legend {
+	background: transparent;
+	box-shadow: none;
+	color: black;
+	
+}
+
+.comparisontable .add-to-cart-btn {
+	position: relative;
+	border: 2px solid transparent;
+	height: 40px;
+	padding: 0 30px;
+	background-color: #ef233c;
+	color: #FFF;
+	text-transform: uppercase;
+	font-weight: 700;
+	border-radius: 40px;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.comparisontable .add-to-cart-btn > i {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 40px;
+	height: 40px;
+	line-height: 38px;
+	color: #D10024;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.comparisontable .add-to-cart-btn:hover {
+	background-color: #FFF;
+	color: #D10024;
+	border-color: #D10024;
+	padding: 0px 30px 0px 50px;
+}
+
+.comparisontable .add-to-cart-btn:hover > i {
+	opacity: 1;
+	visibility: visible;
+}
+
+@media screen and (max-width:650px) {
+
+	div.comparisontable ul.row {
+		flex-direction: column;
+	}
+
+	div.comparisontable img {
+		width: auto;
+		height: auto;
+	}
+
+	div.comparisontable ul.row li {
+		margin-right: 0;
+		width: auto;
+		flex: auto;
+	}
+
+	/* first and last cell within legend column */
+	div.comparisontable ul.row:first-of-type li.legend.legend,
+	div.comparisontable ul.row:last-of-type li.legend {
+		display: none;
+	}
+
+	div.comparisontable ul.row li.legend {
+		width: auto;
+	}
+}
