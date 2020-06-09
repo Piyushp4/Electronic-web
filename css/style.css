@@ -2310,17 +2310,16 @@ div.comparisontable ul.row {
 }
 
 div.comparisontable ul.row li {
-	background: #c9f4ca;
+	background: white;
 	flex: 1;
 	padding: 10px;
-	border-bottom: 0.5px solid black;
-	border-right: 0.5px solid black;
+	border: 2px solid #bbbb;
 	text-align: center;
 }
 
 /* the legend column (first li within each row) */
 div.comparisontable ul.row li.legend {
-	background: #6640d8;
+	background: #D10024;
 	color: white;
 	border: none;
 	width: 200px;
